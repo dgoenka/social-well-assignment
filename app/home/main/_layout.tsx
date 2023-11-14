@@ -22,6 +22,7 @@ export default function TabLayout() {
         name="one"
         options={{
           headerShown: false,
+          tabBarLabel: "Home",
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
         }}
       />
@@ -29,6 +30,7 @@ export default function TabLayout() {
         name="two"
         options={{
           headerShown: false,
+          tabBarLabel: "ToDo",
           tabBarIcon: ({ color }) => <TabBarIcon name="list" color={color} />,
         }}
       />
