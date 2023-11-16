@@ -12,6 +12,7 @@ import Colors from "../../constants/Colors";
 import LoginBar from "../components/LoginBar";
 import { Drawer } from "expo-router/drawer";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { Stack } from "expo-router";
 
 /**
  * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
@@ -54,6 +55,12 @@ export default function TabLayout() {
                   name={"plus"}
                 />
               ),
+            }}
+          />
+          <Drawer.Screen
+            name="seeker/index"
+            options={{
+              drawerItemStyle: { height: 0, width: 0, opacity: 0 },
             }}
           />
         </Drawer>

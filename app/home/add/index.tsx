@@ -1,6 +1,7 @@
 import { ScrollView, StyleSheet } from "react-native";
 import { Text, View } from "../../../components/Themed";
 import DynamicForm from "@coffeebeanslabs/react-native-form-builder";
+import { useNavigation, useRouter } from "expo-router";
 
 const basicFieldStyle = {
   backgroundColor: "#FFFFFF",
@@ -129,9 +130,12 @@ const formTemplate = {
 };
 
 export default function TabOneScreen() {
+  const router = useRouter();
+
   const onSubmit = (formFields: any) => {
     // Actions on submit button click.
     console.log("Form submitted with fields: ", formFields);
+    router.push("/home/seeker");
   };
   return (
     <View style={styles.container}>
