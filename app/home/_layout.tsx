@@ -59,9 +59,11 @@ export default function TabLayout() {
           />
           <Drawer.Screen
             name="seeker/index"
-            options={{
-              drawerItemStyle: { height: 0, width: 0, opacity: 0 },
-            }}
+            options={
+              {
+                //drawerItemStyle: { height: 0, width: 0, opacity: 0 },
+              }
+            }
           />
         </Drawer>
       </View>
